@@ -7,7 +7,7 @@ function ajax(options, callBack){
       data: {},
       contentType: "application/x-www-form-urlencoded"
     }
-    for (key in options) {
+    for (var key in options) {
       _ops[key] = options[key]
     }
     var type = _ops.method.toUpperCase();
@@ -60,19 +60,19 @@ function ajax(options, callBack){
 const promiseAjax = (options) =>
   new Promise((resolve, reject) =>{
           // 创建ajax对象
-          var xhr = null;
-          var _ops = {
+          const xhr = null;
+          const _ops = {
             method: 'get',
             url: '',
             data: {},
             contentType: "application/x-www-form-urlencoded"
           }
           Object.assign(_ops, options);
-          var type = _ops.method.toUpperCase();
+          const type = _ops.method.toUpperCase();
           // 用于清除缓存
-          var random = Math.random();
-          var data = _ops.data
-          var url = _ops.url
+          const random = Math.random();
+          const data = _ops.data
+          const url = _ops.url
 
           if(window.XMLHttpRequest){
               xhr = new XMLHttpRequest();
@@ -80,8 +80,8 @@ const promiseAjax = (options) =>
               xhr = new ActiveXObject('Microsoft.XMLHTTP')
           }
           if(typeof data == 'object'){
-              var str = '';
-              for(var key in data){
+              const str = '';
+              for(let key in data){
                   str += key+'='+data[key]+'&';
               }
               data = str.replace(/&$/, '');
