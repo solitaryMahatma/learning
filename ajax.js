@@ -80,7 +80,7 @@ const promiseAjax = (options) =>
               xhr = new ActiveXObject('Microsoft.XMLHTTP')
           }
           if(typeof data == 'object'){
-              const str = '';
+              let str = '';
               for(let key in data){
                   str += key+'='+data[key]+'&';
               }
