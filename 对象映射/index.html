@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		var target = {
+			name: "xiaobai",
+			age: 34
+		}
+		var source = {
+			userName: "x小看",
+			userAge: 333
+		}
+		 var map ={
+			 name: "userName",
+			 age: "userAge"
+		 }
+		 
+		 function targetToSource({target,source,map, positive = false} = {}) {
+		 	for(var i in map){
+				if (positive) 
+					source[map[i]] = target[i] 
+				else 
+					target[i] = source[map[i]]
+			}
+		 }
+		 
+		 
+		 
+		 targetToSource({target:target,source: source,map:map})
+		 console.log(target)
+		 console.log(source)
+		
+		
+		
+		
+	</script>
+</html>
