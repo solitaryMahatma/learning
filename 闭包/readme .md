@@ -90,10 +90,10 @@ var person = function(){
     }    
 }();    
 
-print(person.name);//直接访问，结果为undefined    
-print(person.getName());    
+console.log(person.name);//直接访问，结果为undefined    
+console.log(person.getName());    
 person.setName("abruzzi");    
-print(person.getName());    
+console.log(person.getName());    
 
 得到结果如下：  
 
