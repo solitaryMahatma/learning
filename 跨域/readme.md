@@ -649,3 +649,7 @@ socket.listen(server).on('connection', function(client) {
 });
 
 ```
+
+
+
+来源于[前端常见跨域解决方案（全）](https://segmentfault.com/a/1190000011145364)  
