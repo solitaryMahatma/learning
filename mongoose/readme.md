@@ -51,10 +51,10 @@ module.exports = {
 
 * options.acitonType 必填 “操作数据库方法”，默认值：'default' 查看符合查询条件的信息条数,  
 
->值为：'insert' 向数据库插入数据， options.data为不限制数组长度
->值为：'delete' 向数据库删除数据， options.data为数组长度1
->值为：'find' 向数据库查看数据， options.data为数组长度1
->值为：'update' 向数据库更新数据， options.data为数组长度2 [旧数据对象或者查询条件，新数据对象对象或者更新条件对象]  
+>值为：'insert' 向数据库插入数据， options.data为不限制数组长度  
+>值为：'delete' 向数据库删除数据， options.data为数组长度1  
+>值为：'find' 向数据库查看数据， options.data为数组长度1  
+>值为：'update' 向数据库更新数据， options.data为数组长度2 [旧数据对象或者查询条件，新数据对象对象或者更新条件对象]    
 
 options.additional 可填， ’额外条件‘ 是一个对象  
 ```
